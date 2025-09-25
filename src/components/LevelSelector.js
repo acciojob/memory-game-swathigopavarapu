@@ -5,15 +5,9 @@ const LevelSelector = ({ setLevel }) => {
     <div className="levels_container">
       <h2>Select Difficulty</h2>
       <div>
-        <label>
-          <input type="radio" name="level" id="easy" onChange={() => setLevel('easy')} /> Easy
-        </label>
-        <label>
-          <input type="radio" name="level" id="normal" onChange={() => setLevel('normal')} /> Normal
-        </label>
-        <label>
-          <input type="radio" name="level" id="hard" onChange={() => setLevel('hard')} /> Hard
-        </label>
+        <button id="easy" onClick={() => setLevel('easy')}>Easy</button>
+        <button id="normal" onClick={() => setLevel('normal')}>Normal</button>
+        <button id="hard" onClick={() => setLevel('hard')}>Hard</button>
       </div>
     </div>
   );
